@@ -61,6 +61,7 @@ def device_params(entry: dict) -> dict:
         "secret": os.environ.get("NET_SECRET", entry.get("secret", "")),
         "device_type": entry.get("device_type", "cisco_ios"),
         "conn_timeout": 10,
+	"global_delay_factor": 2,
     }
 
 
