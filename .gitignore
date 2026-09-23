@@ -1,0 +1,24 @@
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+
+# Ansible
+*.retry
+inventory.ini
+
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# Secrets — device credentials, never commit these
+devices.yaml
+
+# Misc secrets
+*.pem
+*.key
+credentials.yml
