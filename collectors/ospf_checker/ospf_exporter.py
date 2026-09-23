@@ -62,6 +62,7 @@ def device_params(entry: dict) -> dict:
         "device_type": entry.get("device_type", "cisco_ios"),
         "conn_timeout": 10,
 	"global_delay_factor": 2,
+	"session_log": f"session_{entry.get('name', 'unknown')}.log",
     }
 
 
